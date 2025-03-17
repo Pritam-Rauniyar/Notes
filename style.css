@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right bottom, #b40eca, #ce7d03);
+
+}
+#Main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+#addBtn{
+    position: fixed;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: rgb(7, 235, 243);
+    top: 75px;
+    right: 20px;    
+    background-color:  #22971e;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.2s ease-in-out;
+
+
+}
+#addBtn:hover{
+    background-color: #2ccab0;
+    color: black;
+}
+
+.noteData{
+   
+    background-color: #393e46;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.noteData:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.tool{
+    background-color: #222831;
+    color: white;
+    padding: 5px ;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease ;
+}
+.tool i:hover{
+    color: #aca1a1;
+}
+.noteData textarea{
+    width: 400px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+}
+
+.noteData textarea:focus{
+    outline: none;
+}
+
+p{   
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+}
